@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="agecalc.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Raleway:wght@800&display=swap" rel="stylesheet">
+  <title> Mentor | Age calculator app </title>
+</head>
+<body>
+  <div class ="calculator">
+
+  <form>  <div class="inputgroup">
+    <label for="day">DAY</label>
+    <input type="number" id="Day" name="Day" maxlength="2" placeholder="DD">
+  </div>
+
+  <div class="inputgroup">
+    <label for="month">MONTH</label>
+    <input type="number" id="month" name="month" maxlength="2" placeholder="MM">
+  </div>
+
+    <div class="inputgroup">
+    <label for="year">YEAR</label>
+    <input type="number" id="year" name="year" maxlength="2" placeholder="YYYY">
+    </div>
+    <input type="submit" name="submit" id="submit" class="submit" value="" title="submit button"/>
+  </form>
+<div class="age_calculation">
+  <p class="age">
+    <label class="age_label" id="yearvalue">--</label>
+    years</p>
+    <p class="age">
+    <label class="age_label" id="monthvalue">--</label>
+    months</p>
+    <p class="age">
+    <label class="age_label" id="dayvalue">--</label>
+    days</p>
+</div>
+
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/ashmoune" target = "_blank">Ash Moune</a>.
+  </div>
+  <script src="script.js"></script>
+
+</body>
+</html>
