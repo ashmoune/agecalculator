@@ -1,0 +1,139 @@
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Poppins-Bold";
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('./assets/fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('./assets/fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+body {
+  color:#c4c5c4ef ;
+  font-style: inherit;
+  background-color: #eee3e3;
+  border-radius : 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.calculator{
+    background-color : whitesmoke;
+    border-radius : 30px;
+    display : flex;
+    flex-direction: column;
+    top: 10px;
+ 
+}
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row; /* Mettre les éléments du formulaire en ligne */
+    justify-content: space-between; /* Espacer les éléments également */
+    box-shadow: 0 12px 14px #918985(0, 0, 0, 0.1);
+    position: relative;
+    top: 1.2em;
+    height: 5em;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="number"] {
+
+  width: 8em;
+  height: 3em;
+  margin-right: 3em;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  border-color: #f3f8f257;
+}
+
+.attribution {
+  position:fixed;
+  bottom: 15px;;
+     font-size: 11px;
+     /* text-align:end; */
+    padding: 10px;
+     }
+
+.attribution a {
+     color: hsl(228, 45%, 44%);
+     }
+
+     .input-group {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 10px;
+  }
+  .js{
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction:row; /* Mettre les éléments du formulaire en ligne */
+    justify-content:center; /* Espacer les éléments également */
+    box-shadow: 0 12px 14px #F7A072(0, 0, 0, 0.1);
+  }
+  .submit {
+    position: flex;
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 50%);
+    background-image: url("./assets/images/icon-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:#7b2cbf;
+    border: none;
+    border-radius: 100%;
+    width: 46px;
+    height: 46px;
+    padding: 40px;
+}
+
+.submit:hover {
+    cursor: pointer;
+    background-color: black
+}
+.age_calculation{
+  padding: 0;
+  margin-top: 40px;
+}
+.age{
+  margin:0;
+  font-size: 50px;
+  font-weight: 600px;
+  font-style: italic;
+  line-height:1;
+  color:black;
+  flex-direction: column;
+}
+.age_label{
+  color:#7b2cbf;
+ 
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
