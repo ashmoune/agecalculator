@@ -1,4 +1,4 @@
-// Sélectionnez les éléments du DOM
+// éléments du DOM
 const dayInput = document.getElementById("Day");
 const monthInput = document.getElementById("month");
 const yearInput = document.getElementById("year");
@@ -11,7 +11,7 @@ const form = document.querySelector("form");
 function calculateAge(event) {
   event.preventDefault();
 
-  // Obtenez la date de naissance à partir des entrées de l'utilisateur
+  //  date de naissance à partir des entrées de l'utilisateur
   const birthDay = parseInt(dayInput.value);
   const birthMonth = parseInt(monthInput.value);
   const birthYear = parseInt(yearInput.value);
@@ -19,7 +19,7 @@ function calculateAge(event) {
   // Obtenez la date actuelle
   const currentDate = new Date();
 
-  // Vérifiez si les entrées de l'utilisateur sont valides
+  // Vérifie si les entrées de l'utilisateur sont valides
   if (
     isNaN(birthDay) ||
     isNaN(birthMonth) ||
@@ -47,11 +47,10 @@ function calculateAge(event) {
   const months = Math.floor(remainingDays / 30);
   const days = Math.floor(remainingDays % 30);
 
-  // Affichez l'âge calculé dans les balises correspondantes
+  // Affiche l'âge calculé dans les balises correspondantes
   ageYearLabel.textContent = years;
   ageMonthLabel.textContent = months;
   ageDayLabel.textContent = days;
 }
 
-// Écoutez l'événement de soumission du formulaire
 form.addEventListener("submit", calculateAge);
